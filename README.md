@@ -28,7 +28,7 @@ noerr.NoErr(err)
 
 ## TODO
 
-- support ok checking
+- [x] support ok checking
 
 ## Contributing
 
