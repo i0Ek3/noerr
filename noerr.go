@@ -11,9 +11,9 @@ import (
 // needs of error checking
 func noerr(err error) (v interface{}, e error) {
     if err != nil {
-        return v, e
+        return nil, nil
     }
-    return nil, nil
+    return v, e
 }
 
 // NoErr call the function noerr to return the value
@@ -24,7 +24,7 @@ func NoErr(err error) (v interface{}, e error) {
 // NoErrf indicats the standard error showing
 func NoErrf(err error) {
     if err != nil {
-        log.Fatal(err)
+        log.Println(err)
     }
 }
 

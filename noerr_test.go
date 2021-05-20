@@ -5,17 +5,19 @@ import (
     "errors"
 )
 
-var e = errors.New("Wrong here.") 
+var e = errors.New("Wrong here.")
 
 func TestNoErr(t *testing.T){
     _, got := NoErr(nil)
-    _, want := NoErr(e) 
-    
+    _, want := NoErr(e)
+
     if got != want {
         t.Errorf("got %v != want %v", got, want)
     }
-    
-    //NoErrf(e)
+}
+
+func TestNoErrf(t *testing.T) {
+    NoErrf(e)
 }
 
 func TestOked(t *testing.T) {
