@@ -16,8 +16,12 @@ func TestNoErr(t *testing.T){
     }
 }
 
-func TestNoErrf(t *testing.T) {
-    NoErrf(e)
+func TestNoErrP(t *testing.T) {
+    NoErrP(e)
+}
+
+func TestNoErrF(t *testing.T) {
+    NoErrF(e)
 }
 
 func TestOked(t *testing.T) {
