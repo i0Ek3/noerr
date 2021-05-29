@@ -28,6 +28,12 @@ func NoErrP(err error) {
     }
 }
 
+func NoErrln(err error) {
+    if err != nil {
+        log.Println(err)
+    }
+}
+
 // NoErrF indicats the standard error showing then break
 func NoErrF(err error) {
     if err != nil {

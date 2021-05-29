@@ -20,6 +20,10 @@ func TestNoErrP(t *testing.T) {
     NoErrP(e)
 }
 
+func TestNoErrln(t *testing.T) {
+    NoErrln(e)
+}
+
 func TestNoErrF(t *testing.T) {
     NoErrF(e)
 }
