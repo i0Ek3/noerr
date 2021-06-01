@@ -12,10 +12,14 @@ go get https://github.com/i0Ek3/noerr
 
 ### Usage
 
-Please follows above step in your Go project and then run the command below:
+Import noerr package first with command: `import "github.com/i0Ek3/noerr"`, then use it as follows:
 
-```sh
+```Go
 noerr.NoErr(err)
+noerr.NoErrP(err)
+noerr.NoErrF(err)
+noerr.NoErrPc(err)
+noerr.NoErrln(err)
 ```
 
 ## TODO

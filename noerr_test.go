@@ -28,6 +28,10 @@ func TestNoErrF(t *testing.T) {
     NoErrF(e)
 }
 
+func TestNoErrPc(t *testing.T) {
+    NoErrPc(e)
+}
+
 func TestOked(t *testing.T) {
     ok := true
     no := false

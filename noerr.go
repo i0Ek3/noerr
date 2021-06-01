@@ -21,6 +21,12 @@ func NoErr(err error) (v interface{}, e error) {
     return noerr(err)
 }
 
+func NoErrPc(err error) {
+    if err != nil {
+        panic(err)
+    }
+}
+
 // NoErrP indicats the standard error showing then print
 func NoErrP(err error) {
     if err != nil {
