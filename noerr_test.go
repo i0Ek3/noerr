@@ -46,4 +46,5 @@ func TestOked(t *testing.T) {
 
 func TestXerr(t *testing.T) {
     Xerr(e)
+    Xerr(e, "Cannot test")
 }
