@@ -59,3 +59,10 @@ func oked(ok bool) bool {
 func Oked(ok bool) bool {
     return oked(ok)
 }
+
+// Xerr ensures your code never see if err != nil again
+func Xerr(err error) {
+    if err != nil {
+        log.Fatalf("Failed: %v", err.Error())
+    }
+}

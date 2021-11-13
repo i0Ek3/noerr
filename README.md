@@ -15,6 +15,8 @@ go get https://github.com/i0Ek3/noerr
 Import noerr package first with command: `import "github.com/i0Ek3/noerr"`, then use it as follows:
 
 ```Go
+// show err then break
+noerr.Xerr(err)
 noerr.NoErr(err)
 noerr.NoErrP(err)
 noerr.NoErrF(err)
@@ -25,6 +27,8 @@ noerr.NoErrln(err)
 ## TODO
 
 - [x] support ok checking
+- [ ] refactor
+
 
 ## Contributing
 
