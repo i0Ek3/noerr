@@ -12,16 +12,20 @@ go get https://github.com/i0Ek3/noerr
 
 ### Usage
 
-Import noerr package first with command: `import "github.com/i0Ek3/noerr"`, then use it as follows:
-
 ```Go
-// show err then break
-noerr.Xerr(err, msg...)
-noerr.NoErr(err)
-noerr.NoErrP(err)
-noerr.NoErrF(err)
-noerr.NoErrPc(err)
-noerr.NoErrln(err)
+package main
+
+import "github.com/i0Ek3/noerr"
+
+func main() {
+    // show err then break
+    noerr.Xerr(err, msg...)
+    noerr.NoErr(err)
+    noerr.NoErrP(err)
+    noerr.NoErrF(err)
+    noerr.NoErrPc(err)
+    noerr.NoErrln(err)
+}
 ```
 
 ## TODO
