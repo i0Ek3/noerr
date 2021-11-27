@@ -62,8 +62,11 @@ func Oked(ok bool) bool {
 
 // Xerr ensures your code never see if err != nil again
 func Xerr(err error, msg ...string) {
-    if err != nil && len(msg) > 0 {
-        log.Fatalf("%v: %v", msg[0], err.Error())
+    if err != nil {
+        if len(msg) == 0 || msg == nil {
+            log.Fatalf("Failed: %v", err.Error())
+        } else {
+            log.Fatalf("%v: %v", msg[0], err.Error())
+        }
     }
-    log.Fatalf("Failed: %v", err.Error())
 }
